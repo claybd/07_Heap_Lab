@@ -1,3 +1,5 @@
+/* This program was written by Ben Clay.  It may be used without the author's consent for non-profit puproses only. */
+
 #include "Queue.h"
 #include <utility>
 
