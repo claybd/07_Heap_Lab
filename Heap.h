@@ -69,6 +69,7 @@ Heap<Pri,T>::~Heap()
     numItems = 0;
     arrSize = 0;
     delete[] backingArray;
+    backingArray = nullptr;
 }
 
 template<class Pri, class T>
@@ -98,6 +99,7 @@ void Heap<Pri,T>::grow()
     for (int i=0; i < arrSize/2; i++)
         tempArray[i] = backingArray[i];
     
+    delete[] backingArray;
     backingArray = tempArray;
 }
 
